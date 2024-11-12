@@ -1,0 +1,61 @@
+.imgcolaboradores{
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 550px; 
+}
+
+.colaboradores{
+    text-align: center;
+    font-size: x-large;
+}
+
+.presentation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.card-presentation{
+ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-presentation{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.card-presentation h3{
+    font-size: large;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-presentation img{
+    max-width: 70%;
+    height: auto;    
+    border-radius: 15px; 
+    margin-bottom: 5px; 
+}
+
+.card-presentation p{
+    text-align: justify;
+}
+
+.card-presentation a{
+    color: #71b8de;
+    text-decoration: none;
+}
+
+.card-presentation a:hover{
+    text-decoration: underline; 
+}
+
