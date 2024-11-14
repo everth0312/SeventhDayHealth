@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     button.addEventListener('click', () => {
-        const mensaje = `En Visión Empresarial ofrecemos los siguientes servicios:
-        - Asesoría administrativa
-        - Asesoría financiera
-        - Asesoría contable
-        - Constitución de empresas
-        - Asesoría en seguridad social
-        - Asesoría en impuestos
+        const mensaje = `En Seventh Day Health ofrecemos los siguientes servicios:
+        - Revisión médica general
+        - Odontología
+        - Medicina interna
+        - Psicología
+        - Nutrición
+        - Charlas de interés
         Haz clic en "Aceptar" para ver más detalles sobre cada servicio.`;
 
         if (confirm(mensaje)) {

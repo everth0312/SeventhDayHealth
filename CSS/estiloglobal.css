@@ -27,6 +27,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000; 
     height: 60px;
+    justify-content: center; /* Centra los elementos en el nav */
 }
 
 
@@ -41,8 +42,6 @@ header {
 .nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    flex-grow: 1;
     margin: 0;
     padding: 0;
 }
