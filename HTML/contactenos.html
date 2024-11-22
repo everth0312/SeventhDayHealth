@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vision Empresarial</title>
+        <link rel="stylesheet" href="../CSS/contactenos.css">
+        <link rel="stylesheet" href="../CSS/estiloglobal.css">
+    </head>
+    <body>
+    
+        <nav class="nav">
+    
+            <img src="../Imagenes/VISIONEMPRESARIAL.png" alt="Logo empresa" class="logo-nav">
+            <ul>
+                <li><a href="../HTML/index.html">Inicio</a></li>
+                <li><a href="../HTML/nosotros.html">Nosotros</a></li> 
+                <li><a href="../HTML/servicios.html">Servicios</a></li>
+                <li><a href="../HTML/contactenos.html">Contáctenos</a></li>     
+             
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h2 class="titulo">Contáctanos</h2>
+        </section>
+
+        <div class="container">
+            <h1>Envíanos un mensaje</h1>
+    
+            <form id="formularioRegistro">
+                <div class="form-control">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre"placeholder="Ingrese su nombre completo"/>
+                    <small>Error: El nombre es obligatorio</small>
+                </div>
+    
+                <div class="form-control">
+                    <label for="correo">Correo Electronico</label>
+                    <input type="email" id="correo" placeholder="Escribe tu correo electronico"/>
+                    <small>Error: El correo es obligatorio y debe ser valido</small>
+                </div>
+    
+                <div class="form-control">
+                    <label for="mensaje">Tu mensaje</label>
+                    <input type="mensaje" id="mensaje" placeholder="Escribe tu mensaje"/>
+                    <small>Error: El mensaje enviado contiene errores.</small>
+                </div>
+                <button type="submit" id="btnEnviar">Enviar</button>
+                <p id="mensajeExito">Mensaje enviado exitosamente!</p>
+    
+            </form>
+    
+        </div>
+        <script src="../JS/contactenos.js"></script>
+<main class = "content">
+    <h3 class="text-message">Para mayor informacion contáctanos por los siguientes medios</h3>
+    <section class = "articles">
+        <article class = "post">
+            <table class="styled-table">
+                <tbody>
+                  <tr>
+                    <td>Celular</td>
+                    <td>3013953280</td>
+                  </tr>
+                  <tr>
+                    <td>Correo</td>
+                    <td><a href="mailto:visionempresarialo@ejemplo.com">visionempresarialo@ejemplo.com</a></td>
+                  </tr>
+                  <tr>
+                    <td>Linkedin</td>
+                    <td><a href="https://www.linkedin.com/">Linkedin</a></td>
+                  </tr>
+                </tbody>
+              </table>                          
+        </article>
+       
+    
+
+    </section>
+
+</main>
+<footer>
+    <p>Desarrollado por <strong>Visión Empresarial</strong> - Derechos Reservados 2024 &copy;</p>
+    <p>Síguenos en <a href="https://www.linkedin.com" aria-label="LinkedIn de Visión Empresarial" target="_blank">LinkedIn</a> y <a href="https://github.com" aria-label="GitHub de Visión Empresarial" target="_blank">GitHub</a></p>
+</footer>
+</body>
+</html>
