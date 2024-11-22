@@ -1,4 +1,3 @@
-
 .nosotros{
     padding: 0;
     border-radius: 15%;
@@ -10,14 +9,13 @@
     font-size: x-large;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-
-.imagenosotros{
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-    height: 65vh; 
-}
-
+    .imagenosotros {
+        background-size: cover; /* La imagen se ajustará al contenedor */
+        background-position: center; /* Centrar la imagen */
+        background-repeat: no-repeat; /* Evitar que se repita */
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+   
+    }
 .presentacion{
     text-align:justify;
     font-size: 1.2em;
@@ -28,7 +26,7 @@
 }
 
 .presentacion {
-    text-align: center; 
+    text-align: justify; 
     padding-bottom: 40px; 
 }
 
@@ -49,4 +47,25 @@
 .service-info-btn:hover {
     background-color: #005f8b;
 }
+
+
+.logo-nav {
+    width: 80px;  
+    height: auto;
+    position: absolute;
+    z-index: 3;    
+    top: 5px;  
+    left: 5px; 
+    border-radius: 50%;
+}
+
+.logo-nav {
+    width: 80px !important;
+    height: auto !important;
+}
+
+
+
+
+
 
