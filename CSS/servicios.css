@@ -5,6 +5,7 @@
     background-position: center;
     position: relative;
     height: 300px; 
+    background-image:"../Imagenes/logo2-removebg-preview.png" alt="Logo empresa" class="logo-nav";
 }
 
 .hero::before {
