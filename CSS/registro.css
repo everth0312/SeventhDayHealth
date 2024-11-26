@@ -1,0 +1,102 @@
+body {
+    background-color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+    margin: 0; 
+    padding: 0; 
+    color: #333; 
+}
+
+
+.form-container {
+    max-width: 600px; 
+    padding: 30px; 
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); 
+    margin: 50px auto; 
+    margin-top: 100px;
+}
+    .logo-nav {
+    width: 80px;  
+  
+  
+}
+
+.form-control small {
+    visibility: hidden;
+    color: red;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+
+.form-control.success input {
+    border-color: green;
+}
+
+
+.form-control.error input {
+    border-color: red;
+}
+
+
+.column-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    margin-bottom: 40px;
+}
+
+
+.form-control {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+label {
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+#parrafo {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555; 
+    text-align: center; 
+}
+
+.service-info-btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #027373;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#registro {
+    text-align: center;
+    padding-top: 100px;
+}
