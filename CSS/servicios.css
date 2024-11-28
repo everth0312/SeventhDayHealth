@@ -1,40 +1,40 @@
-
+/* Estilo para la sección hero */
 .hero {
-   
     background-size: cover;
     background-position: center;
     position: relative;
     height: 300px; 
-    background-image:"../Imagenes/logo2-removebg-preview.png" alt="Logo empresa" class="logo-nav";
+
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    z-index: 1; 
+/* Estilo para la imagen */
+.hero img {
+    position: absolute; /* Para posicionarla dentro de la sección */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta el centro */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 100%; /* Asegura que ocupe toda la altura */
+    object-fit: cover; /* Escala la imagen para cubrir el contenedor sin deformarla */
 }
 
 
 .titulo {
-    font-size: 2.5em; 
-    margin-top: 250px; 
-    margin-bottom: 10px; 
-    z-index: 2; 
+    
+    color: #F0F0F0;
+    font-size: 3.5em; 
+    z-index: 2;
     position: relative;
-    padding: 20px;
-    color: white;   
+    margin-bottom: 10px; 
+    margin-top: 250px; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 
 .parrafo {
     font-size: 1.2em; 
     margin-top: 30px; 
-    color: #F2E7DC;
+    color: #f0f0f0;
     font-weight: bold;
     z-index: 2; 
     position: relative; 
@@ -48,10 +48,10 @@
 }
 
 .service-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    border: 1px solid #F0F0F0;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(243, 0, 0, 0.1);
     width: 20%;
     margin: 15px;
     padding: 10px;
@@ -60,7 +60,7 @@
 
 
 
-    color: #F2E7DC;
+    color: #F0F0F0;
     position: relative;
 }
 
@@ -72,7 +72,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #578b6d; 
+    background-color: #4d8c9c; 
     z-index: 1; 
     border-radius: 15px;
 }
@@ -82,7 +82,7 @@
 }
 
 .service-card h3 {
-    color: white;
+    color: #F0F0F0;
     font-size: 1.8em;
     margin-bottom: 15px;
     z-index: 2; 
