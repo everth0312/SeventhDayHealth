@@ -34,7 +34,7 @@ body {
 .container {
     max-width: 500px;
     margin: 100px auto;
-    padding: 35px;
+    padding: 30px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -78,4 +78,8 @@ button:hover {
     font-size: 14px;
     margin-top: -10px;
     margin-bottom: 10px;
+}
+
+.h2register{
+    font-size: large;
 }

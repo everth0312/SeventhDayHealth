@@ -1,45 +1,47 @@
 /* Estilo para la sección hero */
 .hero {
-    background-size: cover;
+    background-image: url(../Imagenes/intel-emocional.jpeg);
+    background-size: contain; /* Ajusta la imagen dentro del contenedor */
     background-position: center;
-    position: relative;
-    height: 300px; 
-
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 150px; /* Reduce la altura */
+    width: 100%; /* Opcional: reduce el ancho */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    position: relative; /* Asegura el posicionamiento para elementos hijos */  
 }
 
-/* Estilo para la imagen */
-.hero img {
-    position: absolute; /* Para posicionarla dentro de la sección */
-    top: 50%; /* Centrado vertical */
-    left: 50%; /* Centrado horizontal */
-    transform: translate(-50%, -50%); /* Ajusta el centro */
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    height: 100%; /* Asegura que ocupe toda la altura */
-    object-fit: cover; /* Escala la imagen para cubrir el contenedor sin deformarla */
+@media (max-width: 768px) {
+    .hero {
+        height: 120px; /* Más pequeño en pantallas pequeñas */
+        width: 90%; /* Ajusta el ancho */
+    }
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa negra con 50% de transparencia */
+    z-index: 1; /* Ubica el overlay detrás del contenido */
+}
 
 .titulo {
-    
-    color: #F0F0F0;
-    font-size: 3.5em; 
+    color: whitesmoke;
+    font-size: 4.5em; 
     z-index: 2;
-    position: relative;
-    margin-bottom: 10px; 
-    margin-top: 250px; 
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 
-.parrafo {
-    font-size: 1.2em; 
-    margin-top: 30px; 
-    color: #f0f0f0;
-    font-weight: bold;
-    z-index: 2; 
-    position: relative; 
-    padding: 20px;
-}
+
+
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -57,8 +59,6 @@
     padding: 10px;
     text-align: center;
     transition: transform 0.3s ease;
-
-
 
     color: #F0F0F0;
     position: relative;
@@ -93,8 +93,6 @@
     z-index: 2; 
     position: relative; 
 }
-
-
 
 .logo-nav {
     width: 80px;  
