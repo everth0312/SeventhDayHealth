@@ -1,11 +1,20 @@
-
+/* Estilo para la sección hero */
 .hero {
-   
-    background-size: cover;
+    background-image: url(../Imagenes/intel-emocional.jpeg);
+    background-size: contain; /* Ajusta la imagen dentro del contenedor */
     background-position: center;
-    position: relative;
-    height: 300px; 
-    background-image:"../Imagenes/logo2-removebg-preview.png" alt="Logo empresa" class="logo-nav";
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 150px; /* Reduce la altura */
+    width: 100%; /* Opcional: reduce el ancho */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    position: relative; /* Asegura el posicionamiento para elementos hijos */  
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 120px; /* Más pequeño en pantallas pequeñas */
+        width: 90%; /* Ajusta el ancho */
+    }
 }
 
 .hero::before {
@@ -15,31 +24,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-
-    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.5); /* Capa negra con 50% de transparencia */
+    z-index: 1; /* Ubica el overlay detrás del contenido */
 }
-
 
 .titulo {
-    font-size: 2.5em; 
-    margin-top: 250px; 
-    margin-bottom: 10px; 
-    z-index: 2; 
-    position: relative;
-    padding: 20px;
-    color: white;   
+    color: whitesmoke;
+    font-size: 4.5em; 
+    z-index: 2;
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 
-.parrafo {
-    font-size: 1.2em; 
-    margin-top: 30px; 
-    color: #F2E7DC;
-    font-weight: bold;
-    z-index: 2; 
-    position: relative; 
-    padding: 20px;
-}
+
+
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -48,19 +50,17 @@
 }
 
 .service-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    border: 1px solid #F0F0F0;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(243, 0, 0, 0.1);
     width: 20%;
     margin: 15px;
     padding: 10px;
     text-align: center;
     transition: transform 0.3s ease;
 
-
-
-    color: #F2E7DC;
+    color: #F0F0F0;
     position: relative;
 }
 
@@ -72,7 +72,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #578b6d; 
+    background-color: #4d8c9c; 
     z-index: 1; 
     border-radius: 15px;
 }
@@ -82,7 +82,7 @@
 }
 
 .service-card h3 {
-    color: white;
+    color: #F0F0F0;
     font-size: 1.8em;
     margin-bottom: 15px;
     z-index: 2; 
@@ -93,8 +93,6 @@
     z-index: 2; 
     position: relative; 
 }
-
-
 
 .logo-nav {
     width: 80px;  

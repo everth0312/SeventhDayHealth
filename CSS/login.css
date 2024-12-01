@@ -2,26 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
 }
 
-.hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #6c63ff;
-    color: white;
-}
-
-.titulo {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.eslogan {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
 
 .btn-login {
     padding: 10px 20px;
@@ -40,11 +24,11 @@ body {
 .login-container {
     max-width: 400px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 10px;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
+    margin-top: 2px;
 }
 
 h2 {
@@ -73,14 +57,31 @@ input {
 .btn-submit {
     width: 100%;
     padding: 10px;
-    font-size: 1rem;
+    background-color: #005f73;
     color: white;
-    background-color: #6c63ff;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
-    background-color: #5a54e0;
+    background-color:  #005f73;
 }
+
+.sano {
+background-size: cover; /* Ajusta la imagen al contenedor */
+background-position: center;
+background-repeat: no-repeat;
+width: 30%; /* Ocupa todo el ancho disponible */
+max-height: 300px; /* Limita la altura máxima */
+height: auto; /* Mantén las proporciones */
+display: block; /* Para asegurar que se vea correctamente */
+margin: 0 auto; /* Centra la imagen */
+padding-top: 55px;
+padding-bottom: 1px;
+
+}
+
+
