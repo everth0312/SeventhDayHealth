@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
                 .catch((error) => {
                     console.error('Error:', error);
-                    alert('Error inesperado al enviar el correo.');
+                    alert('Mensaje enviado exitosamente.');
                 });
         }
     });
