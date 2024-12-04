@@ -9,15 +9,17 @@
     font-size: x-large;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-    .imagenosotros {
-        background-size: cover; /* La imagen se ajustará al contenedor */
-        background-position: center; /* Centrar la imagen */
-        background-repeat: no-repeat; /* Evitar que se repita */
-        width: 100%; /* Ocupa todo el ancho del contenedor */
-   
-    }
+.imagenosotros {
+    background-size: cover; /* La imagen se ajustará al contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que se repita */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-height: 550px;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(0.6); /* Ajusta el nivel de oscuridad (0.7 es un 70% de brillo) */
+}
 .presentacion{
-    text-align:justify;
     font-size: 1.2em;
     margin-top: auto;
     justify-content: center;
@@ -64,7 +66,12 @@
     height: auto !important;
 }
 
-
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
 
 
 

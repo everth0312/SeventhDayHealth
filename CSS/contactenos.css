@@ -38,7 +38,7 @@ form {
 
 button {
   padding: 10px 20px;
-  background-color: maroon;
+  background-color: #1f4dcc;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -48,7 +48,7 @@ button {
 }
 
 button:hover {
-  background-color: #800000;
+  background-color: #1f4dcc;
 }
 
 #mensajeExito {
@@ -60,12 +60,12 @@ button:hover {
 
 
 .hero {
-  background-image: url('https://images.pexels.com/photos/6069307/pexels-photo-6069307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta de la imagen de fondo */
+  background-image: url(../Imagenes/doctora-smartphone-doctora-telefono-movil-enfermera-sosteniendo-su-telefono-celular-mano_208024-1345.avif); /* Ruta de la imagen de fondo */
 
 }
 
 .hero h2 {
-  color: white;
+  color: #038C7F;
   font-size: 2.5em; 
   margin-bottom: 10px; 
   margin-top: 250px; 
@@ -93,7 +93,7 @@ button:hover {
   border-collapse: collapse;
   font-size: 16px;
   text-align: left;
-  background: linear-gradient(120deg, #5e4c4c, #1b7758); 
+  background: linear-gradient(120deg, #5e4c4c, #038C7F); 
   border-radius: 8px; 
   overflow: hidden;
 }
@@ -140,4 +140,19 @@ button:hover {
   color: rgb(56, 54, 54);
   text-align: center;
   margin-top: 20px;
+}
+
+.logo-nav {
+  width: 80px;  
+  height: auto;
+  position: absolute;
+  z-index: 3;    
+  top: 5px;  
+  left: 5px; 
+  border-radius: 50%;
+}
+
+.logo-nav {
+  width: 80px !important;
+  height: auto !important;
 }

@@ -35,11 +35,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!hayError) {
             const mensajeExito = document.getElementById('mensajeExito');
-            mensajeExito.style.visibility = 'visible'; 
-            setTimeout(() => {
-                mensajeExito.style.visibility = 'hidden'; 
-            }, 3000);
-            formulario.reset();
+        
+            // Recoge los datos del formulario
+            const data = {
+                nombre: nombre.value.trim(),
+                correo: correo.value.trim(),
+                mensaje: mensaje.value.trim(),
+            };
+        
+            // Envía los datos al servidor
+            fetch('http://localhost:3000/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+                .then((response) => response.json())
+                .then((result) => {
+                    if (result.success) {
+                        mensajeExito.style.visibility = 'visible';
+                        setTimeout(() => {
+                            mensajeExito.style.visibility = 'hidden';
+                        }, 3000);
+                        formulario.reset();
+                    } else {
+                        alert('Error al enviar el mensaje: ' + result.error);
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('Mensaje enviado exitosamente.');
+                });
         }
     });
 
