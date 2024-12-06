@@ -28,6 +28,8 @@ Ejecuta:
 
 Debes ver la versión 8.0.40.
 
+Una vez que completes la instalación de MySQL, necesitarás un administrador de bases de datos para interactuar con la base de datos de manera gráfica. MySQL es compatible con una variedad de herramientas, y puedes usar la que prefieras según tu experiencia y necesidades (MySQL Workbench,DBeaver,HeidiSQL,phpMyAdmin)
+
 ## Instalación de Node.js Ver 20.18.1 y npm Ver 10.8.2
 
 * Descargar Node.js
