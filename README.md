@@ -62,7 +62,7 @@ Después de tener las tecnologias necesarias se debe  relizar lo siguiente:
 
 1 - Como primer paso clonar el proyecto y seguir los pasos del Readme del siguinete repositorio: ´[https://github.com/elianacudriz/HealthMinistry](https://github.com/elianacudriz/HealthMinistry)´ en la rama main estan todos los cambios finales.
 
-2 - Clonar este proyecto que bajará loa cambios visuales con el comando en el bash ubicado en la carpeta del proyecto: ´[https://github.com/everth0312/SeventhDayHealth/tree/production](https://github.com/everth0312/SeventhDayHealth/production)` en la rama *production* se deberan todos los cambios finales.
+2 - Clonar este proyecto que bajará loa cambios visuales con el comando en el bash ubicado en la rama *production* se deberan todos los cambios finales.
 
 * Luego, se debe ejecutar localmente abriendo en el navegador de su proferencia el archivo de la caprtea HTML/index.html. *se debe abrir algo como localhost:tupuertoHTML/index.html.* Allí esta toda la información de navegación como tal, depués de la página principal esta el nosotros, los servicios a los cuales puedes acceder, pero para poder agendar dichos servicios debes iniciar sesion y para iniciar sesion debes registrarte y para ello redirige a la pagina inicial mencionada désde la pagina 1. la pagina de react. Allí es donde se valida la sesion y se realiza el registro de los servicio.
 
